@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- INICIO DEL HEADER ------------------------------------------------>
+    <header id="main-header">
+        
+            <nav>
+                        <ul id="burguerNavbar">
+                            
+                            <li class="burguer"></li>
+                            <li class="burguer"></li>
+                            <li class="burguer"></li> 
+                            
+                        </ul>
+                    
+                        <div id="opened-menu">
+                            <p class="itemsMenuAbierto" id="itemIniciarSesion">Iniciar Sesión</p> 
+                            <p class="itemsMenuAbierto">Registrarse</p> 
+                            <p class="itemsMenuAbierto">Sobre Nosotros</p> 
+                        </div>
+                    
+
+                        <ul id="expandedNavbar">
+
+                            <li>
+                                <p id="logInText">Iniciar Sesión</p>
+                            </li>
+                        
+                            <li>
+                                <p id="register">Registrarse</p>
+                            </li>
+
+                            <li id="liUsuarioX">
+                                <p id="usuarioX"></p>
+                            </li>
+                        </ul>
+            
+            </nav>
+
+    </header>
+
+
+<!-- <div id="LoginWindow">
+
+
+    
+</div> -->
+
+    <div id="registerWindow">
+
+        <p class="subtitulo">Registro de Usuario</p>
+
+        <form action="/server/" method="POST" id="registerForm">
+        
+            <label for="userName">Usuario</label>
+            <input type="text" id="userName" name="user" placeholder="Por Ejemplo: Brutus">
+
+            <label for="password">Contraseña</label>
+            <input type="text" id="password" name="pass" placeholder="Por Ejemplo: mago1234">
+            <input type="submit" value="Aceptar" id="botonAceptaRegistro">
+        </form>
+
+        <div class="divBotonCancelar">
+            <button id="botonCancelarRegistro">Cancelar</button>
+        </div>
+        
+
+
+    </div>
+    <div id="loginWindow">
+
+        <p class="subtitulo">Iniciar Sesión</p>
+
+        <form action="/server/" method="POST" id="loginForm">
+        
+            <label for="userName">Usuario</label>
+            <input type="text" id="loginUserName" name="user">
+
+            <label for="password">Contraseña</label>
+            <input type="text" id="loginPassword" name="pass">
+            <input type="submit" value="Aceptar" id="botonAceptaSesion">
+        </form>
+
+        <div class="divBotonCancelar">
+            <button id="botonCancelarSesion">Cancelar</button>
+        </div>
+        
+
+
+    </div>
+
+
+
+
+
+    <img class="logo" src="images\rolelogo2.svg" alt="Logo de la página">
+    
+
+   
+
+
+<div class="divFondo">
+
+    <p class="subtitulo">Complete RPG Creator Online</p>
+    <div>
+        <p class="cuerpoDelTexto">Bienvenidos a la taberna! Estamos a punto de empezar la partida! <br>Tomen un asiento y un jarro de bebida! <br>Aquí podrán crear, darle vida y guardar sus personajes. </p>
+    </div>
+
+<button id="buttonCreaPersonaje">Crea tu personaje</button>
+
+</div>
+
+<!-- FORMULARIO PARA CREAR PERSONAJE -->
+<div id="divFormulario">   
+    <form action="/server/" method="POST" id="form">
+    
+            <label for="name">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Sylas">
+            <!-- <button type ="button" id="submitName">Busca tu personaje</button>  -->
+
+            <label for="raza">Raza</label>
+            <input type="text" id="raza" name="raza" placeholder="Semielfo">
+
+            <label for="clase">Clase</label>
+            <input type="text" id="clase" name="clase" placeholder="Arquero">
+
+            <label for="sexo">Sexo</label>
+            <input type="text" id="sexo" name="sexo" placeholder="Varón">
+
+            <input type="submit" value="Aceptar" id="botonSubmitCharacter">
+
+            
+        
+    </form>
+</div>
+
+
+<!-- FICHA DEL PERSONAJE -->
+<div class="grid-container">
+
+    <div class="divPortrait" >
+        <div class="img-container">
+            <img class="fotoPerfilCharacter" src="images\port1.jpg" alt="">
+        </div>
+
+        <div class="thumbnail-container" >
+            <img class="thumbnail active" src="images\port1.jpg" alt="">
+            <img class="thumbnail" src="images\port2.jpg" alt="">
+            <img class="thumbnail" src="images\port3.jpg" alt="">
+            <img class="thumbnail" src="images\port4.jpg" alt="">
+            <img class="thumbnail" src="images\port5.jpg" alt="">
+            <img class="thumbnail" src="images\port6.jpg" alt="">
+            <img class="thumbnail" src="images\port7.jpg" alt="">
+            <img class="thumbnail" src="images\port8.jpg" alt="">
+            <img class="thumbnail" src="images\port9.jpg" alt="">
+            <img class="thumbnail" src="images\port10.jpg" alt="">
+            <img class="thumbnail"  src="images\port11.jpg" alt="">
+            <img class="thumbnail" src="images\port12.jpg" alt="">
+            <img class="thumbnail" src="images\port13.jpg" alt="">
+            <img class="thumbnail" src="images\port14.jpg" alt="">
+            <img class="thumbnail" src="images\port15.jpg" alt="">
+           
+        </div>
+    </div>
+            
+            
+            
+
+        <div class="divVidaMana">
+
+            <p class="pVidaMana">Vida</p>
+            <p class="pVidaMana">Mana</p>
+            <p class="pVidaMana">Defensa</p>
+            <p class="pVidaMana">Nivel</p>
+            <p class="pVidaMana">Oro</p>
+            
+            <input type="text" id="vida" name="life">
+            <input type="text" id="mana" name="mana">
+            <input type="text" id="nivel" name="level">
+            <input type="text" id="oro" name="gold">
+            <input type="text" id="armadura" name="armor">
+            
+            
+            
+            
+
+        </div>
+
+        <div id="divDado">
+
+            <button id="lanzarDados">Tirar dados</button>
+            <img id="dadoImagen" src="images\dado epico2.svg" alt="">
+            <p id="resultadoDado"></p>
+           
+        </div>
+
+
+        <div class="divDatosDelPersonaje">
+            <p id="nombrePersonaje"></p>
+            <p id="clasePersonaje"></p>
+            <p id="razaPersonaje"></p>
+            <p id="sexoPersonaje"></p>
+
+
+        </div>
+
+        <div class="divAtributos">
+
+            <p class="atributo">Fuerza</p> 
+            <button class="buttonPlus">+</button>
+            <button class="buttonMinus">-</button>
+            <p class="valorAtributo span1" id="fuerza">0</p>
+            
+
+            <p class="atributo">Destreza</p> 
+            <button class="buttonPlus">+</button>
+            <button class="buttonMinus">-</button>
+            <p class="valorAtributo span1" id="destreza">0</p>
+
+            <p class="atributo">Constitución</p> 
+            <button class="buttonPlus">+</button>
+            <button class="buttonMinus">-</button>
+            <p class="valorAtributo span1" id="constitucion">0</p>
+
+            <p class="atributo">Inteligencia</p> 
+            <button class="buttonPlus">+</button>
+            <button class="buttonMinus">-</button>
+            <p class="valorAtributo span1" id="inteligencia">0</p>
+
+            <p class="atributo">Sabiduría</p> 
+            <button class="buttonPlus">+</button>
+            <button class="buttonMinus">-</button>
+            <p class="valorAtributo span1" id="sabiduria">0</p>
+
+            <p class="atributo">Carisma</p> 
+            <button class="buttonPlus">+</button>
+            <button class="buttonMinus">-</button>
+            <p class="valorAtributo span1" id="carisma">0</p>
+
+
+        </div>
+            
+        <div class="divEquipamiento">
+
+            <label for="equipo">Mi Equipo</label>  
+            <textarea rows="8" name="equipo" id="miEquipo" placeholder="Ej: Espada corta afilada"></textarea> 
+              
+        </div>
+
+        <div class="divHechizos">
+
+            <label for="equipo">Mis Hechizos</label>
+            <textarea rows="8" name="hechizos" id="misHechizos"></textarea> 
+            
+      </div>
+
+      <div id="divDecoraciones">
+
+            <img class="marco" id="marcoAtributo1" src="images\marcoatributo.png" alt="">
+            <img class="marco" id="marcoAtributo2" src="images\marcoatributo.png" alt="">
+            <img class="marco" id="marcoAtributo3" src="images\marcoatributo.png" alt="">
+            <img class="marco" id="marcoAtributo4" src="images\marcoatributo.png" alt="">
+            <img class="marco" id="marcoAtributo5" src="images\marcoatributo.png" alt="">
+            <img class="marco" id="marcoAtributo6" src="images\marcoatributo.png" alt="">
+      </div>
+
+
+
+
+      
+</div>
+
+
+<!-- <p id="dataJson1"></p> -->
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="navbar.js"></script>
+<script src="character.js" ></script>
+<script src="dados.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

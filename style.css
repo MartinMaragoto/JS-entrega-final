@@ -1,0 +1,692 @@
+/* Familia Matisse */
+
+    /* Font para subtitulos */
+@font-face {
+    font-family: "Matisse EB" ;
+    src: url(fonts/MatisseEB.otf);
+}
+/* Font para cuerpo del texto */
+@font-face {
+    font-family: "Matisse M" ;
+    src: url(fonts/MatisseM.otf);
+}
+    /* Font para Titulos  */
+@font-face {
+    font-family: "Matisse UB" ;
+    src: url(fonts/MatisseUB.otf);
+}
+
+
+
+/* Familia Breathe Fire */
+@font-face {
+    font-family: "Breathe Fire";
+    src: url(fonts/BreatheFireIii-PKLOB.ttf);
+}
+
+/* Familia Breathe Fire para numeros del dado */
+@font-face {
+    font-family: "Breathe Fire IV";
+    src: url(fonts/BreatheFireIv-3zAVZ.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/rolepc2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/*-----------------------------------------------NAVBAR--------------------------------------------------------------------*/
+#main-header {
+    color: white;
+    padding: 0.5vw 0 0 0;
+    height: 2vw;
+    text-align: left;
+    border-radius: 3px;
+    /* border: solid #59a1ff; */
+    margin-bottom: 2vw;
+    background-color: #2b2738;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+#burguerNavbar {
+    padding: 0 0 0 5vw;
+    margin: 0;
+    height: 8vw;
+    width: 10vw;
+    float: right;
+    cursor: pointer;
+}
+
+#opened-menu {
+    display: none;
+  }
+#opened-menu.open {
+    background-color: rgba(0, 19, 105, 0.5);
+    text-align: center;
+    font-size: 45px;
+    padding: 10px;
+    text-shadow: none;
+    display: block;
+}
+
+.itemsMenuAbierto {
+
+    font-size: 2vw;
+    font-family: "Matisse EB";
+    
+
+}
+
+#itemIniciarSesion {
+
+    margin-top: 9vw;
+}
+
+#expandedNavbar {
+
+    list-style: none;
+    margin: 0;
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #fff;
+    background-color: #2b2738;
+}
+
+
+#expandedNavbar li {
+
+    margin: 0vw 4vw;
+
+}
+
+
+
+li {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-family: "Matisse M";
+}
+
+#liUsuarioX {
+
+    display: none;
+
+}
+#usuarioX {
+
+    font-family: "Matisse UB" ;
+    text-align: center;
+}
+
+.burguer {
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 0.8vw;
+    margin: 0.8vw;
+    
+    }
+
+/*-----------------------------------------------FIN DEL NAVBAR--------------------------------------------------------------------*/
+
+/*----------------------------------------REGISTER-LOGIN WINDOW POP UP --------------------------- */
+
+/* #modalPopUps {
+
+    display: flex;
+    justify-content: center;
+
+} */
+
+#registerWindow, #loginWindow {
+
+    display: none;
+    position: absolute;
+    top: 10vw;
+    left: 20vw;
+}
+
+#registerWindow.open, #loginWindow.open {
+
+    background-color: #4c4468;
+    width: 50%;
+    padding: 2vw;
+    display: block;
+    margin-left: 2.6vw;
+
+}
+
+#registerForm, #loginForm {
+
+    border-radius: 0.3m;
+    padding: 2vw;
+    margin: 0 2vw 0 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    font-family: "Matisse UB" ;
+    text-align: center;
+}
+
+#userName, #loginUsername {
+
+    font-family: "Matisse M" ;
+
+}
+
+
+#password, #loginPassword {
+
+    font-family: "Matisse M" ;
+
+}
+
+.divBotonCancelar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+
+/* -------Titulos y párrafos------- */
+
+
+
+.logo {
+    display: block;
+    width: 50%;
+    margin: 30vw auto 1vw auto;
+    align-items: center;
+}
+
+.divFondo {
+
+    margin-top: 6vw ;
+    background-color: #4c4468;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitulo {
+    font-family: "Matisse UB" ;
+    color:#5adaff;
+    /* text-shadow: 2px 2px #000000; */
+    font-size: 2vw;
+    text-align: center;
+    margin: 2vw 2vw 3vw 2vw;
+}
+
+#buttonCreaPersonaje, #botonAceptaRegistro, #botonCancelarRegistro, #botonAceptaSesion, #botonCancelarSesion, #botonSubmitCharacter, #lanzarDados {
+
+width: 18vw;
+height: 6vw;
+margin: 0 auto 0 auto;
+background-color: #4CC2F1;
+align-items: center;
+border-radius: 24px;
+border-style: none;
+box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+box-sizing: border-box;
+color: #3c4043;
+cursor: pointer;
+display: inline-flex;
+font-family: "Matisse UB";
+font-size: 1.3vw;
+justify-content: center;
+max-width: 100%;
+padding: 2px 24px;
+position: relative;
+text-align: center;
+max-width: 100%;
+}
+
+#botonAceptaRegistro, #botonAceptaSesion {
+
+    margin-top: 2vw;
+
+}
+
+
+#buttonCreaPersonaje {
+
+    margin-bottom: 2vw;
+}
+
+#buttonCreaPersonaje:active {
+    box-shadow: #222c7e 0 3px 7px inset;
+    transform: translateY(2px);
+    
+  }
+
+
+
+.LogInText {
+
+    font-family: "Matisse UB";
+    width: 10vw;
+    margin-top: 1vw;
+}
+
+
+.cuerpoDelTexto {
+
+    font-family: "Matisse M" ;
+    color: #ffffff;
+    font-size: 1vw;
+    text-align: center;
+}
+
+/* ----------------------------------------------FORMULARIO-------------------------------------------------------------------- */
+
+/*FORMULARIO*/
+
+
+
+.grid-container {
+    background-color:  #d0ccc3;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25vw 15vw 15vw 15vw 15vw 15vw;
+    grid-template-rows: 10vw 10vw 8vw repeat(11, 7vw);
+    column-gap: 20px;
+    background-image: url("images/fondopersonaje4.jpg");
+    background-size: 100vw;
+
+
+}
+
+.divPortrait .img-container {
+
+    width: 25vw;
+    height: 25vw;
+
+}
+
+.divPortrait .img-container .fotoPerfilCharacter{
+
+    height: 100%;
+    width: 100%;
+    border-radius: 7%;
+    box-shadow: 9px 0 5px rgba(0, 0, 0, .12)
+
+}
+
+.divPortrait .thumbnail-container {
+
+    display: flex;
+    height: 6vw;
+    justify-content: space-between;
+}
+
+.thumbnail {
+
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.active {
+
+    opacity: 1;
+    box-shadow:  0 5px 5px rgba(0, 0, 0, .12)
+}
+.thumbnail-container {
+
+    overflow: hidden;
+    width: 25vw;
+    border-radius: 5px;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Evita el salto de línea de las miniaturas */
+}
+
+
+
+
+/* .fotoPerfilCharacter{
+    height: 90%;
+    grid-column-start:1; 
+    grid-row-start: 1;
+    grid-row-end: 4;
+} */
+
+
+
+#divFormulario {
+    
+    background-color: #272625;
+  }
+
+  #form {
+    border-radius: 0.3m;
+    padding: 2em;
+    margin: 0;
+    font-family: "Matisse EB";
+    grid-template-columns: 15vw 25vw auto auto; 
+    row-gap: 10px;
+    display: none;
+  }
+
+#form label {
+
+    color: antiquewhite;
+}
+#nombre, #raza, #clase, #sexo {
+
+    width: 15vw;
+}
+
+#botonSubmitCharacter {
+
+grid-column: auto;
+grid-row: auto;
+margin-left: 38.3vw;
+}
+/* #submitName {
+
+    background-color: yellow;
+} */
+
+
+  
+ 
+  
+  .form-row input[type=text] {
+    background-color: #d0ccc3;
+    border-radius: 0.4em;
+    border-style: none;
+    padding: 0.7em;
+    font-size: 0.9em;
+    font-family: "Matisse M";
+  }
+  
+  .form-row label {
+    margin: 1.5em 0;
+  }
+
+  /* --------FIN DEL FORMULARIO----------- */
+/* Atributos */
+
+.divAtributos {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 14;
+    display: grid;
+    grid-template-columns: auto 4vw 4vw;
+    grid-template-rows: repeat(12, 5vw);
+
+
+}
+
+.span1 {
+
+    grid-column: 3 span;
+    margin: 0;
+    color: #ffffff;
+
+}
+
+
+.atributo {
+    font-family: "Matisse EB" ;
+    color: #ffffff;
+    font-size: 2vw;
+    margin: 1.8vw 0 0 0;
+    text-align: center;
+    z-index: 1;
+}
+.buttonPlus, .buttonMinus {
+
+    height: 3vw;
+    width: 3vw;
+    margin: 2vw 0 0 2vw;
+    align-self: center;
+    font-size: 2vw;
+    z-index: 1;
+}
+
+.valorAtributo {
+
+    margin-left: 5.4vw;
+    font-family: "Matisse EB";
+    font-size: 2.5vw;
+    z-index: 1;
+}
+
+
+/* Equipamiento */
+
+.divEquipamiento {
+
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    font-family: "Matisse M";
+    font-size: 1.5vw;
+    border-radius:10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#miEquipo {
+
+    resize: none;
+    height: 100%;
+    width: 100%;
+    /* background-image: url("images/fondopersonaje3.jpg"); */
+    /* border: solid 2vw #4CC2F1; */
+    border-radius: 10px;
+    font-family: "Matisse M";
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+
+ .divHechizos {
+
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 10;
+    grid-row-end: 14;
+    font-family: "Matisse M";
+    font-size: 1.5vw;
+    border-radius:10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#misHechizos {
+    resize: none;
+    height: 100%;
+    width: 100%;
+    font-family: "Matisse M";
+    font-size: 1.5vw;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ .divVidaMana {
+
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    font-family: "Matisse M";
+    font-size: 1.5vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 6vw;
+    justify-items: center;
+    
+}
+.pVidaMana {
+
+    font-family: "Matisse EB";
+    font-size: 1.7vw;
+    
+
+}
+#vida, #mana, #oro, #nivel, #armadura  {
+    height: 3vw;
+    width: 3vw;
+}
+
+
+
+/* DADOS VIRTUALES */
+#divDado {
+    
+    grid-column-start: 2; 
+    grid-column-end: 6; 
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-image: url("images/fondo2.png");
+    background-repeat: no-repeat;
+    background-size: 60vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+  
+}
+
+#dadoImagen {
+   
+    display: block;
+    width: 25%;
+    position: relative;
+    bottom: 6vw;
+    right: 23.2vw;
+   
+}
+
+#lanzarDados {
+
+    top: 9vw;
+    right: 10vw;
+    width: 10vw;
+    height: 4vw;
+    padding: 0;
+}
+
+#resultadoDado {
+
+    font-family: "Breathe Fire IV";
+    font-size: 4vw;
+    color: #b8f0ff;
+    position: absolute;
+    right: 30.1vw;
+    top: 5.2vw;
+    text-shadow: -1px 1px 25px rgb(255, 255, 255);
+    filter: drop-shadow(2px 2px 4px#0033ff);
+    /* -webkit-text-stroke: 1px #000000; */
+
+    z-index: 2;
+}
+
+
+.divDatosDelPersonaje {
+
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-family: "Matisse M";
+    font-size: 1.5vw;
+    border-radius:10%; 
+}
+
+#nombrePersonaje {
+
+    font-size: 3vw;
+    text-align: center;
+    margin: 0;
+}
+
+#clasePersonaje, #razaPersonaje, #sexoPersonaje{
+
+    font-size: 1.7vw;
+    text-align: center;
+    margin: 0;
+}
+
+.marco {
+
+    position: relative;
+    height: 9.1vw;
+  
+}
+
+#marcoAtributo1 {
+
+    top: 35.5vw;
+    right: 66.2vw;
+}
+
+#marcoAtributo2 {
+    top: 36.2vw;
+    right: 66.2vw;
+    
+}
+
+#marcoAtributo3 {
+    top: 36.9vw;
+    right: 66.2vw;
+    
+}
+
+#marcoAtributo4 {
+    top: 37.6vw;
+    right: 66.2vw;
+    
+}
+
+#marcoAtributo5 {
+    top: 38.2vw;
+    right: 66.2vw;
+    
+}
+
+#marcoAtributo6 {
+    top: 39vw;
+    right: 66.2vw;
+    
+}
+
+#dataJson1 {
+
+    color: #ffffff;
+}
+
+
+
+
+/* footer {
+    position: absolute;
+    bottom: -200px;
+    background-color: black;
+    height: 300px;
+    width: 105vw;
+} */
