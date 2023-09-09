@@ -192,6 +192,7 @@ formularioCrearPersonaje.style.display = "grid"
 // Elegir foto del personaje
 
 let mainImg= document.querySelector('.fotoPerfilCharacter')
+let mainImg2= document.querySelector('.fotoPerfilCharacter2')
 let thumbnails = document.querySelectorAll ('.thumbnail')
 
 
@@ -202,8 +203,31 @@ thumbnails.forEach(thumb => {
         active.classList.remove ('active')
         thumb.classList.add ('active')
         mainImg.src = thumb.src
+        mainImg2.src = mainImg.src
     })
 })
+
+//Botones para iterar entre las miniaturas 
+const thumbnailContainer = document.getElementById("thumbnail-container");
+
+const prevButton = document.getElementById("slide-arrow-prev");
+const nextButton = document.getElementById("slide-arrow-next");
+
+nextButton.addEventListener("click", (event) => {
+    const slideWidth = thumbnailContainer.clientWidth;
+      thumbnailContainer.scrollLeft += slideWidth;
+  });
+
+  prevButton.addEventListener("click", () => {
+    const slideWidth = thumbnailContainer.clientWidth;
+   thumbnailContainer.scrollLeft -= slideWidth;
+  });
+
+
+
+
+
+
 
 
 fetch("./data.json")

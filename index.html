@@ -117,59 +117,82 @@
 <button id="buttonCreaPersonaje">Crea tu personaje</button>
 
 </div>
-
-<!-- FORMULARIO PARA CREAR PERSONAJE -->
+<!-- ----------------------------------------------------------------------------------------------------------------------->
+<!-- FORMULARIO PARA CREAR PERSONAJE -------------------------------------------------------------------------->
 <div id="divFormulario">   
     <form action="/server/" method="POST" id="form">
     
-            <label for="name">Nombre</label>
+            <label for="name" id="nombreLabel">Nombre</label>
             <input type="text" id="nombre" name="nombre" placeholder="Sylas">
-            <!-- <button type ="button" id="submitName">Busca tu personaje</button>  -->
 
-            <label for="raza">Raza</label>
+            <label for="raza" id="razaLabel">Raza</label>
             <input type="text" id="raza" name="raza" placeholder="Semielfo">
 
-            <label for="clase">Clase</label>
+            <label for="clase" id="claseLabel">Clase</label>
             <input type="text" id="clase" name="clase" placeholder="Arquero">
 
-            <label for="sexo">Sexo</label>
+            <label for="sexo" id="sexoLabel">Sexo</label>
             <input type="text" id="sexo" name="sexo" placeholder="Varón">
 
             <input type="submit" value="Aceptar" id="botonSubmitCharacter">
 
-            
+            <div class="divPortrait" >
+                <div class="img-container">
+                    <img class="fotoPerfilCharacter" src="images\port1.jpg" alt="">
+                </div>
+        
+               
+        
+                <div id="thumbnail-container" >
+                    <button class="slide-arrow" id="slide-arrow-prev">
+                        &#8249;
+                      </button>
+                    <img class="thumbnail active" src="images\port1.jpg" alt="">
+                    <img class="thumbnail" src="images\port2.jpg" alt="">
+                    <img class="thumbnail" src="images\port3.jpg" alt="">
+                    <img class="thumbnail" src="images\port4.jpg" alt="">
+                    <img class="thumbnail" src="images\port5.jpg" alt="">
+                    <img class="thumbnail" src="images\port6.jpg" alt="">
+                    <img class="thumbnail" src="images\port7.jpg" alt="">
+                    <img class="thumbnail" src="images\port8.jpg" alt="">
+                    <img class="thumbnail" src="images\port9.jpg" alt="">
+                    <img class="thumbnail" src="images\port10.jpg" alt="">
+                    <img class="thumbnail"  src="images\port11.jpg" alt="">
+                    <img class="thumbnail" src="images\port12.jpg" alt="">
+                    <img class="thumbnail" src="images\port13.jpg" alt="">
+                    <img class="thumbnail" src="images\port14.jpg" alt="">
+                    <img class="thumbnail" src="images\port15.jpg" alt="">
+                   
+                      
+                      <button class="slide-arrow" id="slide-arrow-next">
+                        &#8250;
+                      </button>
+                </div>
+            </div>
         
     </form>
+
+  
+
 </div>
 
 
 <!-- FICHA DEL PERSONAJE -->
+
+
+
+
+
+
+
 <div class="grid-container">
 
-    <div class="divPortrait" >
-        <div class="img-container">
-            <img class="fotoPerfilCharacter" src="images\port1.jpg" alt="">
-        </div>
 
-        <div class="thumbnail-container" >
-            <img class="thumbnail active" src="images\port1.jpg" alt="">
-            <img class="thumbnail" src="images\port2.jpg" alt="">
-            <img class="thumbnail" src="images\port3.jpg" alt="">
-            <img class="thumbnail" src="images\port4.jpg" alt="">
-            <img class="thumbnail" src="images\port5.jpg" alt="">
-            <img class="thumbnail" src="images\port6.jpg" alt="">
-            <img class="thumbnail" src="images\port7.jpg" alt="">
-            <img class="thumbnail" src="images\port8.jpg" alt="">
-            <img class="thumbnail" src="images\port9.jpg" alt="">
-            <img class="thumbnail" src="images\port10.jpg" alt="">
-            <img class="thumbnail"  src="images\port11.jpg" alt="">
-            <img class="thumbnail" src="images\port12.jpg" alt="">
-            <img class="thumbnail" src="images\port13.jpg" alt="">
-            <img class="thumbnail" src="images\port14.jpg" alt="">
-            <img class="thumbnail" src="images\port15.jpg" alt="">
-           
+        <div class="img-container">
+            <img id="fotoPerfilCharacter2" src="images\port2.jpg" alt="">
         </div>
-    </div>
+        
+  
             
             
             
@@ -202,7 +225,7 @@
            
         </div>
 
-
+<!-- Información del personaje en pantalla -->
         <div class="divDatosDelPersonaje">
             <p id="nombrePersonaje"></p>
             <p id="clasePersonaje"></p>
@@ -211,7 +234,7 @@
 
 
         </div>
-
+<!-- Atributos del personaje -->
         <div class="divAtributos">
 
             <p class="atributo">Fuerza</p> 

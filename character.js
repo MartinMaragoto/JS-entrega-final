@@ -50,6 +50,7 @@ const consoleCharacter = (name, raza, clase, sexo) => {
     parrafoClasePersonaje.textContent = savedCharacterClase
     parrafoSexoPersonaje.textContent = savedCharacterSexo
     
+   
 
 
     
