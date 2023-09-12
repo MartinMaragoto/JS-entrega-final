@@ -63,17 +63,21 @@ function userRegister (){
     cancelRegisterButton.addEventListener ('click', userRegister)
     
     
-// FUNCION RECIBIR DATOS Y ALMACENARLOS
+// FUNCION RECIBIR DATOS Y ALMACENARLOS----------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
   
 
+// if (!usuarioX= "") {
+
+// }
 
 
 const saveUserToJson = (userObject) => {
     let usersArray = JSON.parse(localStorage.getItem('users')) || [];
     usersArray.push(userObject);
     localStorage.setItem('users', JSON.stringify(usersArray));
-
-    console.log(usersArray);
 };
 
 
@@ -98,8 +102,22 @@ const consolearUsuario = (clave, valor) => {
     let savedPassword = localStorage.getItem('password');
     loginWindow.classList.remove('open')
     registerWindow.classList.remove('open')
-    liUsuarioX.style.display = 'flex'
-    usuarioX.textContent = "¡Bienvenido," + " " + savedUsername + '!'
+
+
+        if (savedUsername && savedPassword) {
+
+            liUsuarioX.style.display = 'flex'
+            usuarioX.textContent = "¡Bienvenido," + " " + savedUsername + '!'
+        } else {
+    
+            liUsuarioX.style.display = 'none'
+        }
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      
 
 
     

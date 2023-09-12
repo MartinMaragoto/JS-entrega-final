@@ -93,23 +93,23 @@ botonMenos[5].addEventListener('click', function() {
 
 
 //------------------------Objeto constructor de personajes------------------------------------
-class Personaje {
+// class Personaje {
 
-    constructor (id, nombre, clase, sexo, raza, habilidades) {
+//     constructor (id, nombre, clase, sexo, raza, habilidades) {
 
-        this.id = id
-        this.nombre= nombre
-        this.clase = clase
-        this.sexo = sexo
-        this.raza = raza
-        this.habilidades = habilidades
-    }
-}
-const personaje1 = new Personaje ("1", "Sylas", "Arquero", "Masculino", "Semielfo", ["Doble Disparo", "Tiro Certero"])
-const personaje2 = new Personaje ("2", "Erline", "Mago", "Femenino", "Elfo", ["Curación", "Trato Animal", "Bola de Fuego", "Congelar", "Luz"])
-const personaje3 = new Personaje ("3", "Earwen", "Sacerdote", "Femenino", "Humano", ["Invocación Divina", "Santificar"])
-const personaje4 = new Personaje ("4", "Warren", "Bárbaro", "Masculino", "Humano", ["Destripar", "Superar el Dolor"])
-const personaje5 = new Personaje ("5", "Andrey", "Arquero", "Masculino", "Humano", ["Doble Disparo", "Trato Animal"])
+//         this.id = id
+//         this.nombre= nombre
+//         this.clase = clase
+//         this.sexo = sexo
+//         this.raza = raza
+//         this.habilidades = habilidades
+//     }
+// }
+// const personaje1 = new Personaje ("1", "Sylas", "Arquero", "Masculino", "Semielfo", ["Doble Disparo", "Tiro Certero"])
+// const personaje2 = new Personaje ("2", "Erline", "Mago", "Femenino", "Elfo", ["Curación", "Trato Animal", "Bola de Fuego", "Congelar", "Luz"])
+// const personaje3 = new Personaje ("3", "Earwen", "Sacerdote", "Femenino", "Humano", ["Invocación Divina", "Santificar"])
+// const personaje4 = new Personaje ("4", "Warren", "Bárbaro", "Masculino", "Humano", ["Destripar", "Superar el Dolor"])
+// const personaje5 = new Personaje ("5", "Andrey", "Arquero", "Masculino", "Humano", ["Doble Disparo", "Trato Animal"])
 
 //-------------------------------Método de filtrado--------------------------------------
 
@@ -127,60 +127,75 @@ const personaje5 = new Personaje ("5", "Andrey", "Arquero", "Masculino", "Humano
 
 
 // ------------------------Método de búsqueda--------------------------------------------
-const characters = [
-    {id:1, nombre: "Sylas",  clase: "Arquero", raza:"Semielfo"},
-    {id:2, nombre: "Erline", clase: "Mago", raza:"Elfo"},
-    {id:3, nombre: "Earwen", clase: "Sacerdote", raza:"Humano"},
-    {id:4, nombre: "Warren", clase: "Bárbaro", raza:"Humano"},
-    {id:5, nombre: "Andrey", clase: "Arquero", raza:"Humano"}
+// const characters = [
+//     {id:1, nombre: "Sylas",  clase: "Arquero", raza:"Semielfo"},
+//     {id:2, nombre: "Erline", clase: "Mago", raza:"Elfo"},
+//     {id:3, nombre: "Earwen", clase: "Sacerdote", raza:"Humano"},
+//     {id:4, nombre: "Warren", clase: "Bárbaro", raza:"Humano"},
+//     {id:5, nombre: "Andrey", clase: "Arquero", raza:"Humano"}
 
-]
+// ]
 
-let botonDeBusqueda = document.getElementById ("submitName") 
+// let botonDeBusqueda = document.getElementById ("submitName") 
 
 
 // Búsqueda del personaje ya ingresado en el sistema a través del input "nombre"
-function busquedaDelPersonaje() {
+// function busquedaDelPersonaje() {
 
 
-let inputNombreDelPersonaje = document.getElementById ("nombre").value 
-const characterFinder = characters.find((item) => item.nombre === inputNombreDelPersonaje)
+// let inputNombreDelPersonaje = document.getElementById ("nombre").value 
+// const characterFinder = characters.find((item) => item.nombre === inputNombreDelPersonaje)
 
-if (characterFinder) {
+// if (characterFinder) {
 
-    let mensaje = `
-    nombre: ${characterFinder.nombre}
-    clase: ${characterFinder.clase}
-    raza: ${characterFinder.raza}
-    `
+//     let mensaje = `
+//     nombre: ${characterFinder.nombre}
+//     clase: ${characterFinder.clase}
+//     raza: ${characterFinder.raza}
+//     `
     
-    alert (mensaje)
+//     alert (mensaje)
 
- } else {
+//  } else {
 
-    alert ("¡No conocemos a ese personaje! ¡Pero aquí puedes crearlo!")
- }
-}
+//     alert ("¡No conocemos a ese personaje! ¡Pero aquí puedes crearlo!")
+//  }
+// }
 
 // botonDeBusqueda.addEventListener ('click', busquedaDelPersonaje)
+
+
+
+
+
+
 
 
 
 // Navbar que desaparece al scrolear
 
 let navbar = document.getElementById ('main-header')
-let scrollDown = window.pageYOffset
+
+window.addEventListener ('scroll', function() {
+
+
+    
+    let scrollDown = window.pageYOffset
 
 if (scrollDown >= 350) {
 
-navbar.style.display = 'none'
+navbar.style.opacity = 0
 } else {
 
-    navbar.style.display = 'block'
+    navbar.style.opacity = 1
 }
+})
 
-//Crear tu personaje
+//----------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------------------------
+//CREATE YOUR CHARACTER
 
+let gridContainer =document.getElementById ("grid-container")
 let buttonCreate =document.getElementById("buttonCreaPersonaje")
 let formularioCrearPersonaje =document.getElementById ("form")
 
@@ -192,7 +207,7 @@ formularioCrearPersonaje.style.display = "grid"
 // Elegir foto del personaje
 
 let mainImg= document.querySelector('.fotoPerfilCharacter')
-let mainImg2= document.querySelector('.fotoPerfilCharacter2')
+let mainImg2= document.getElementById('fotoPerfilCharacter2')
 let thumbnails = document.querySelectorAll ('.thumbnail')
 
 
@@ -204,16 +219,16 @@ thumbnails.forEach(thumb => {
         thumb.classList.add ('active')
         mainImg.src = thumb.src
         mainImg2.src = mainImg.src
+
     })
 })
-
 //Botones para iterar entre las miniaturas 
 const thumbnailContainer = document.getElementById("thumbnail-container");
 
 const prevButton = document.getElementById("slide-arrow-prev");
 const nextButton = document.getElementById("slide-arrow-next");
 
-nextButton.addEventListener("click", (event) => {
+nextButton.addEventListener("click", () => {
     const slideWidth = thumbnailContainer.clientWidth;
       thumbnailContainer.scrollLeft += slideWidth;
   });
@@ -222,6 +237,14 @@ nextButton.addEventListener("click", (event) => {
     const slideWidth = thumbnailContainer.clientWidth;
    thumbnailContainer.scrollLeft -= slideWidth;
   });
+
+  //Botón aceptar creación del personaje
+
+  botonSubmitCharacter.addEventListener ('click', ()=>{
+
+    formularioCrearPersonaje.style.display = "none"
+    gridContainer.style.display = "grid"
+  })
 
 
 

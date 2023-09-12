@@ -34,17 +34,18 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("images/rolepc2.jpg");
-    background-size: contain;
+    background-image: url("images/rolepc3.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
 
 
 
-/* --------------------------------------------------------------------------------------------------------------------------- */
-/*-----------------------------------------------NAVBAR--------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/*-----------------------------------------------NAVBAR---------------------------------------------------------------------------------------*/
 #main-header {
     color: white;
     padding: 0.5vw 0 0 0;
@@ -57,6 +58,8 @@ body {
     position: sticky;
     top: 0;
     right: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 
 #burguerNavbar {
@@ -141,9 +144,9 @@ li {
     
     }
 
-/*-----------------------------------------------FIN DEL NAVBAR--------------------------------------------------------------------*/
+/*-----------------------------------------------FIN DEL NAVBAR-------------------------------------------------------------------------------------------------------------------------*/
 
-/*----------------------------------------REGISTER-LOGIN WINDOW POP UP --------------------------- */
+/*----------------------------------------REGISTER-LOGIN WINDOW POP UP ---------------------------------------------------------------------------------------------------------- */
 
 /* #modalPopUps {
 
@@ -301,16 +304,17 @@ max-width: 100%;
 
 
 
-.grid-container {
+#grid-container {
     background-color:  #d0ccc3;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: 25vw 15vw 15vw 15vw 15vw 15vw;
+    display: none;
+    grid-template-columns: 25vw 15vw 15vw 15vw 15vw;
     grid-template-rows: 10vw 10vw 8vw repeat(11, 7vw);
     column-gap: 20px;
     background-image: url("images/fondopersonaje4.jpg");
     background-size: 100vw;
+    background-size: cover;
 
 
 }
@@ -496,7 +500,7 @@ max-width: 100%;
     margin: 1.5em 0;
   }
 
-  /* --------FIN DEL FORMULARIO----------- */
+  /* --------------------------------------------------FIN DEL FORMULARIO--------------------------------------------- */
 /* Atributos */
 
 .divAtributos {
@@ -665,18 +669,25 @@ max-width: 100%;
     padding: 0;
 }
 
+#contenedorResultadoDado {
+
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    top: 6vw;
+    left: 30.5vw;
+    text-align: center;
+
+}
 #resultadoDado {
 
     font-family: "Breathe Fire IV";
     font-size: 4vw;
     color: #b8f0ff;
-    position: absolute;
-    right: 30.1vw;
-    top: 5.2vw;
+    /* right: 30.1vw;
+    top: 5.2vw; */
     text-shadow: -1px 1px 25px rgb(255, 255, 255);
     filter: drop-shadow(2px 2px 4px#0033ff);
-    /* -webkit-text-stroke: 1px #000000; */
-
     z-index: 2;
 }
 
