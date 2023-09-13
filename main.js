@@ -177,26 +177,19 @@ let miEquipo = document.getElementById('miEquipo')
         consoleMyEquipment(valorInput)
     });
 
-const saveMiEquipoToJson = (equipmentText) =>{
-
-let enteredText = JSON.parse(localStorage.getItem('items')) || []
-enteredText.push(equipmentText)
-localStorage.setItem('items', JSON.stringify(enteredText))
-
-}
-
+    const saveMiEquipo = (equipmentText) => {
+        localStorage.setItem('items', equipmentText);
+    }
+    
 const consoleMyEquipment = (myEquipment) => {
     
-    saveMiEquipoToJson (myEquipment)
-    miEquipo.textContent= myEquipment
-   
+    saveMiEquipo (myEquipment)   
 }
 
 let previousEquipment = localStorage.getItem("items");
 if (previousEquipment) {
     miEquipo.value = previousEquipment
 }
-
 
 
 
