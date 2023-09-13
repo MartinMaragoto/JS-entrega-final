@@ -99,6 +99,8 @@ const consolearUsuario = (clave, valor) => {
     localStorage.setItem('username', clave);
     localStorage.setItem('password', valor); 
     let savedUsername = localStorage.getItem('username');
+
+    
     let savedPassword = localStorage.getItem('password');
     loginWindow.classList.remove('open')
     registerWindow.classList.remove('open')
@@ -112,14 +114,6 @@ const consolearUsuario = (clave, valor) => {
     
             liUsuarioX.style.display = 'none'
         }
-
-
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      
-
-
     
 
     const userObject = {
@@ -135,7 +129,12 @@ const consolearUsuario = (clave, valor) => {
 
 
 
-
+    let user = localStorage.getItem("username");
+    if (user) {
+        liUsuarioX.style.display = "flex";
+        usuarioX.textContent = "¡Bienvenido," + " " + user + "!";
+    }
+    
 //LOG IN-----------------------------------------
 function userLogin (){
 

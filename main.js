@@ -34,7 +34,8 @@ const valorAtributos = {
 }
  
 
-
+//botones para sumar atributos -----------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
  botonMas[0].addEventListener('click', function() {
      valorAtributos.valorStrength++;
      strength.textContent = valorAtributos.valorStrength;
@@ -60,6 +61,9 @@ const valorAtributos = {
      charisma.textContent = valorAtributos.valorCharisma;
  });
 
+
+//botones para restar atributos--------------------------------------------------------------
+//----------------------------------------------------------------------------------------------
  botonMenos[0].addEventListener('click', function() {
     valorAtributos.valorStrength--;
     strength.textContent = valorAtributos.valorStrength;
@@ -86,6 +90,37 @@ botonMenos[5].addEventListener('click', function() {
 });
 
 
+
+//Texto ingresado en MI EQUIPO (input sin boton submit)
+
+let miEquipo = document.getElementById('miEquipo')
+
+
+    miEquipo.addEventListener('input', function() {
+    
+        let valorInput = miEquipo.value;
+        consoleMyEquipment(valorInput)
+    });
+
+const saveMiEquipoToJson = (equipmentText) =>{
+
+let enteredText = JSON.parse(localStorage.getItem('items')) || []
+enteredText.push(equipmentText)
+localStorage.setItem('items', JSON.stringify(enteredText))
+
+}
+
+const consoleMyEquipment = (myEquipment) => {
+    
+    saveMiEquipoToJson (myEquipment)
+    miEquipo.textContent= myEquipment
+   
+}
+
+let previousEquipment = localStorage.getItem("items");
+if (previousEquipment) {
+    previousEquipment.textContent = miEquipo
+}
 
 
 

@@ -15,7 +15,7 @@ const saveCharToJson = (characterObject) => {
     dataArray.push(characterObject);
     localStorage.setItem('character', JSON.stringify(dataArray));
 
-    console.log(dataArray);
+    
 };
 
 
@@ -67,10 +67,31 @@ const consoleCharacter = (name, raza, clase, sexo) => {
 
        
     };
+    // const characterInfo = {
+
+
+    // }
+    let nameChar = localStorage.getItem("nameData");
+    let razaChar = localStorage.getItem("razaData");
+    let claseChar = localStorage.getItem("claseData");
+    let sexoChar = localStorage.getItem("sexoData");
+
+    if (nameChar || razaChar || claseChar || sexoChar) {
+
+        parrafoNombrePersonaje.textContent = nameChar
+        parrafoRazaPersonaje.textContent = razaChar
+        parrafoClasePersonaje.textContent = claseChar
+        parrafoSexoPersonaje.textContent = sexoChar
+    }
 
 
 
 
 //localStorage.clear()
+
+
+
+
+
 
 

@@ -540,6 +540,9 @@ max-width: 100%;
     align-self: center;
     font-size: 2vw;
     z-index: 1;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    border-radius: 9px;
+    border-color: #d0ccc3;
 }
 
 .valorAtributo {
@@ -626,8 +629,13 @@ max-width: 100%;
 
 }
 #vida, #mana, #oro, #nivel, #armadura  {
-    height: 3vw;
-    width: 3vw;
+    height: 5vw;
+    width: 5vw;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    border-radius: 9px;
+    border-color: #d0ccc3;
+    font-size: 1.7vw;
+    text-align: center;
 }
 
 
@@ -638,8 +646,8 @@ max-width: 100%;
     grid-column-start: 2; 
     grid-column-end: 6; 
     grid-row-start: 1;
-    grid-row-end: 5;
-    background-image: url("images/fondo2.png");
+    grid-row-end: 4;
+    background-image: url("images/fondo3.png");
     background-repeat: no-repeat;
     background-size: 60vw;
     display: flex;
@@ -653,10 +661,9 @@ max-width: 100%;
    
     display: block;
     width: 25%;
-    height: 50%;
     position: relative;
-    top: 3vw;
-    right: 23.2vw;
+    bottom: 2vw;
+    right: 21.5vw;
    
 }
 
@@ -725,37 +732,42 @@ max-width: 100%;
 
 #marcoAtributo1 {
 
-    top: 35.5vw;
-    right: 66.2vw;
+    top: 26vw;
+    left: 25.3vw;
 }
 
 #marcoAtributo2 {
-    top: 36.2vw;
-    right: 66.2vw;
+    
+    top: 26.5vw;
+    left: 25.3vw;
     
 }
 
 #marcoAtributo3 {
-    top: 36.9vw;
-    right: 66.2vw;
+    
+    top: 27vw;
+    left: 25.3vw;
     
 }
 
 #marcoAtributo4 {
-    top: 37.6vw;
-    right: 66.2vw;
+    
+    top: 27.5vw;
+    left: 25.3vw;
     
 }
 
 #marcoAtributo5 {
-    top: 38.2vw;
-    right: 66.2vw;
+   
+    top: 28vw;
+    left: 25.3vw;
     
 }
 
 #marcoAtributo6 {
-    top: 39vw;
-    right: 66.2vw;
+   
+    top: 28.5vw;
+    left: 25.3vw;
     
 }
 
