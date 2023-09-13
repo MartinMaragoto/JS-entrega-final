@@ -105,7 +105,7 @@ const consolearUsuario = (clave, valor) => {
     loginWindow.classList.remove('open')
     registerWindow.classList.remove('open')
 
-
+//ESTE codigo hace que la recarga sea instantanea cuando inicias sesion con otro nombre
         if (savedUsername && savedPassword) {
 
             liUsuarioX.style.display = 'flex'

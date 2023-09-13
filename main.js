@@ -91,6 +91,81 @@ botonMenos[5].addEventListener('click', function() {
 
 
 
+
+
+
+
+
+// const saveUserToJson = (userObject) => {
+//     let usersArray = JSON.parse(localStorage.getItem('users')) || [];
+//     usersArray.push(userObject);
+//     localStorage.setItem('users', JSON.stringify(usersArray));
+// };
+
+
+
+    
+// let registerForm = document.getElementById('registerForm')
+    
+// registerForm.addEventListener('submit', (e) => {
+//     e.preventDefault()
+    
+//     let registerInput = e.target.children
+//     let username = registerInput[1].value
+//     let password = registerInput[3].value
+//     consolearUsuario(username, password);
+//     })
+    
+
+// const consolearUsuario = (clave, valor) => {
+//     localStorage.setItem('username', clave);
+//     localStorage.setItem('password', valor); 
+//     let savedUsername = localStorage.getItem('username');
+
+    
+//     let savedPassword = localStorage.getItem('password');
+//     loginWindow.classList.remove('open')
+//     registerWindow.classList.remove('open')
+
+
+//         if (savedUsername && savedPassword) {
+
+//             liUsuarioX.style.display = 'flex'
+//             usuarioX.textContent = "¡Bienvenido," + " " + savedUsername + '!'
+//         } else {
+    
+//             liUsuarioX.style.display = 'none'
+//         }
+    
+
+//     const userObject = {
+
+//     username: savedUsername,
+//     password: savedPassword
+//     }
+
+//     saveUserToJson(userObject)
+
+       
+//     };
+
+
+
+//     let user = localStorage.getItem("username");
+//     if (user) {
+//         liUsuarioX.style.display = "flex";
+//         usuarioX.textContent = "¡Bienvenido," + " " + user + "!";
+//     }
+    
+
+
+
+
+
+
+
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 //Texto ingresado en MI EQUIPO (input sin boton submit)
 
 let miEquipo = document.getElementById('miEquipo')
@@ -119,7 +194,7 @@ const consoleMyEquipment = (myEquipment) => {
 
 let previousEquipment = localStorage.getItem("items");
 if (previousEquipment) {
-    previousEquipment.textContent = miEquipo
+    miEquipo.value = previousEquipment
 }
 
 
