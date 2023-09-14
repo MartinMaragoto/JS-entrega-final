@@ -84,7 +84,44 @@ const consoleCharacter = (name, raza, clase, sexo) => {
         parrafoSexoPersonaje.textContent = sexoChar
     }
 
+    
+const stats = [ 
+        document.getElementById ('vida'),
+        document.getElementById ('mana'),
+        document.getElementById ('nivel'),
+        document.getElementById ('oro'),
+        document.getElementById ('armadura')   
+    ]
 
+   
+    stats.forEach(element => {
+        
+
+        element.addEventListener('input', function () {
+            let inputStat = element.value;
+            let id = element.id;
+            consoleStats (id, inputStat)
+        })
+    });
+
+        
+     const saveStats = (id, statsValue) => {
+        localStorage.setItem (`stats_${id}`,statsValue)
+    }
+
+    const consoleStats = (id, statsValue) => {
+        saveStats (id, statsValue)
+    }
+
+    stats.forEach(element => {
+        let id = element.id
+        let previousStats = localStorage.getItem (`stats_${id}`);
+        if (previousStats) {
+                element.value = previousStats;
+            }      
+        }) 
+        
+            
 
 
 //localStorage.clear()

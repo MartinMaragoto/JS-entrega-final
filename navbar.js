@@ -158,25 +158,30 @@ loginForm.addEventListener('submit', (e) => {
     consolearUsuario(sesionUsername, sesionPassword);//Activa la función consolearUsuario declarada en la sección register
  })
 
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
 
 
 
 
 //localStorage.removeItem ('nombre')
 //localStorage.clear()
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
