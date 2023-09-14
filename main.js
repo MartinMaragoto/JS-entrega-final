@@ -40,6 +40,7 @@ const valorAtributos = {
      valorAtributos.valorStrength++;
      strength.textContent = valorAtributos.valorStrength;
  });
+
  botonMas[1].addEventListener('click', function() {
      valorAtributos.valorDexterity++;
      dexterity.textContent = valorAtributos.valorDexterity;
@@ -89,10 +90,58 @@ botonMenos[5].addEventListener('click', function() {
     charisma.textContent = valorAtributos.valorCharisma;
 });
 
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+//LocalStorage de los atributos
+
+const arrayAtributos =[
+
+    document.getElementById('fuerza'),
+    document.getElementById('destreza'),
+    document.getElementById('constitucion'),
+    document.getElementById('inteligencia'),
+    document.getElementById('sabiduria'),
+    document.getElementById('carisma')
+ ]
 
 
+// Función para guardar los valores en el almacenamiento local
+const saveArrayAtributos = (id, statsAtributes) => {
+    localStorage.setItem(`arrayAtributos_${id}`, statsAtributes);
+};
 
+// Función para actualizar el almacenamiento local y el contenido de los elementos <p>
+const updateAndSaveAttribute = (element, increment) => {
+    const id = element.id;
+    const currentValue = parseInt(element.textContent);
+    const newValue = currentValue + increment;
+    element.textContent = newValue;
+    saveArrayAtributos(id, newValue);
+};
 
+// Escuchar clics en los botones y actualizar los valores
+for (let i = 0; i < arrayAtributos.length; i++) {
+    botonMas[i].addEventListener('click', function () {
+        updateAndSaveAttribute(arrayAtributos[i], 1);
+    });
+
+    botonMenos[i].addEventListener('click', function () {
+        updateAndSaveAttribute(arrayAtributos[i], -1);
+    });
+}
+
+const loadArrayAtributos = () => {
+    arrayAtributos.forEach(element => {
+        const id = element.id;
+        const previousAtributos = localStorage.getItem(`arrayAtributos_${id}`);
+        if (previousAtributos) {
+            element.textContent = previousAtributos;
+        }
+    });
+};
+
+// Llamar a la función para cargar los valores al cargar la página
+window.addEventListener('load', loadArrayAtributos);
 
 
 
