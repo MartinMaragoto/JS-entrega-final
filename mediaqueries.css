@@ -1,7 +1,45 @@
 @media screen and (min-width: 380px) and (max-width: 599px){
 
    
-   /* TAMAÑOS DE TEXTOS */
+    .divFondo {
+
+        margin-top: 12vw ;
+        
+    }
+ 
+    #divDado {
+    
+        grid-column-start: 2; 
+        grid-column-end: 6; 
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-size: 70vw;
+        width: 70vw;
+      
+        
+      
+    }
+    #lanzarDados {
+
+        
+        width: 18vw;
+        height: 8vw;
+        
+    }
+
+    #dadoImagen {
+   
+        width: 20%;
+        bottom: 2vw;
+        right: 21.5vw;
+       
+    }
+    
+ 
+ 
+ 
+ 
+    /* TAMAÑOS DE TEXTOS */
 
 
    #opened-menu.open {
@@ -30,6 +68,8 @@
 .button {
 
     font-size: 2.3vw;
+    width: 28vw;
+    height: 10vw;
 }
 
 #logInText {
@@ -49,12 +89,6 @@
     font-size: 3.5vw;
    
   }
-
-
-
-
-
-   
    
     #razaLabel, #sexoLabel {
 
@@ -78,7 +112,9 @@
         margin-left: -5vw;
     }
 
-
+    #fotoPerfilCharacter2{
+        height: 370%;
+    } 
     
     #thumbnail-container {
 
@@ -88,12 +124,21 @@
 
     #misHechizos {
     
-        font-size: 1.5vw;
+        font-size: 2.5vw;
     
     }
+
+    #miEquipo {
+
+        font-size: 2.5vw;
+      
+    }
+
     .divVidaMana {
 
         font-size: 2.5vw;
+        grid-row-start:16;
+        margin-left: -20vw;
       
     }
     .pVidaMana {
@@ -105,7 +150,9 @@
     #vida, #mana, #oro, #nivel, #armadura  {
       
         font-size: 2.7vw;
-    
+        margin-top: 3vw;
+        height: 9vw;
+        width: 9vw;
     }
 
     #resultadoDado {
@@ -148,117 +195,129 @@
     #grid-container {
 
         grid-template-columns: 25vw 15vw 15vw 15vw 15vw;
-        grid-template-rows: 10vw 10vw 8vw repeat(18, 7vw);
+        grid-template-rows: 10vw 10vw 8vw repeat(22, 7vw);
         column-gap: 10px;
         background-size: 100vw;
         
     }
     
-    .divAtributos {
-        grid-column-start: 2;
-        grid-column-end: 5;
-        grid-row-start: 5;
-        grid-row-end: 14;
-       
-    }
-
+    
     .divEquipamiento {
 
         grid-column-start: 1;
-        grid-row-start: 15;
-        grid-row-end: 20;
+        grid-row-start: 19;
+        grid-row-end: 25;
         width: 40vw;
         margin-left: 8vw;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 
     .divHechizos {
 
         grid-column-start: 3;
-        grid-row-start: 15;
-        grid-row-end: 20;
+        grid-row-start: 19;
+        grid-row-end: 25;
         width: 40vw;
         margin-left: 8vw;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
        
     }
 
-   
+    .divAtributos {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 14;
+        grid-template-rows: repeat(12, 7vw);
+    }
+
 
     .atributo {
     
-        margin: 2.5vw 0 0 -1vw;
+        margin: 0vw 0 0vw -1vw;
         font-size: 2.7vw;
         
     } 
 
     .valorAtributo {
 
-        margin-left: 3.4vw;
+        margin: -4vw 0 0vw 24vw;
         font-size: 3.5vw;
       
     }
  
     .buttonPlus, .buttonMinus {
 
-        height: 7vw;
-        width: 7vw;
+        height: 8vw;
+        width: 8vw;
         font-size: 2.3vw;
-
+        margin: 0 5vw 0 5vw;
     }
-    .buttonPlus {
+    .buttonMinus {
+
+        margin-left: -15vw;
+    }
+    /* .buttonPlus {
     
         
         margin: 2vw 0 0 4vw;
        
       
-    }
+    } */
     #contenedorResultadoDado {
 
-      
-        left: 32vw;
+        top: 4vw;
+        left: 37.5vw;
             
     }
 /* -----------------Recuadros de madera------------- */
 
+    .marco {
+
+        position: relative;
+        height: 13vw;
+        width: 24vw;
+    
+    }
+
     #marcoAtributo1 {
 
-        top: 26vw;
-        left: 40.7vw;
+        top: 15vw;
+        left: 40vw;
     }
     
     #marcoAtributo2 {
         
-        top: 26.4vw;
-        left: 40.7vw;
+        top: 15.4vw;
+        left: 40vw;
         
     }
     
     #marcoAtributo3 {
         
-        top: 26.6vw;
-        left: 40.7vw;
+        top: 15.6vw;
+        left: 40vw;
         
     }
     
     #marcoAtributo4 {
         
-        top: 27vw;
-        left: 40.7vw;
+        top: 16vw;
+        left: 40vw;
         
     }
     
     #marcoAtributo5 {
        
-        top: 27.1vw;
-        left: 40.7vw;
+        top: 16.2vw;
+        left: 40vw;
         
     }
     
     #marcoAtributo6 {
        
-        top: 26.9vw;
-        left: 40.7vw;
+        top: 16.5vw;
+        left: 40vw;
         
     }
 }
