@@ -1,7 +1,11 @@
-[
-{ "id": 1 ,"nombre": "camisa" , "precio": 1000},
-{ "id": 2 ,"nombre": "gorra", "precio": 1000},
-{ "id": 3 ,"nombre": "media", "precio": 1000},
-{ "id": 4 ,"nombre": "zapato", "precio": 1000}
 
-]
+[
+    {"id": 1, "nombre": "Sylas",  "clase": "Arquero", "raza":"Semielfo", "sexo": "Varón", "url":"/images/port1.jpg"},
+    {"id": 2, "nombre": "Erline", "clase": "Mago", "raza":"Elfo", "sexo": "Mujer", "url":"/images/port2.jpg"},
+     {"id": 3, "nombre": "Earwen", "clase": "Sacerdote", "raza":"Humano", "sexo": "Mujer", "url":"/images/port7.jpg"},
+     {"id": 4, "nombre": "Warren", "clase": "Bárbaro", "raza":"Humano", "sexo": "Varón", "url":"/images/port3.jpg"},
+    {"id": 5, "nombre": "Andrey", "clase": "Arquero", "raza":"Humano", "sexo": "Varón", "url":"/images/port4.jpg"}
+
+ ]
+
+

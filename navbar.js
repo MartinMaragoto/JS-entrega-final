@@ -5,7 +5,7 @@
  const burguerLi = document.querySelectorAll ('#burguerNavbar li')//las rayitas del menu hamburguesa
 
  const expandedNavbarUl = document.getElementById ('expandedNavbar') // ul del nabvar expandido
- const expandedNavbarLi = document.querySelectorAll ('#iconNavbar li') //iniciar sesion y registrarse
+ const expandedNavbarLi = document.querySelectorAll ('#iconNavbar li') //iniciar sesion
  const openedMenu = document.getElementById ('opened-menu')
 
  const windowWidth = window.innerWidth
@@ -30,18 +30,10 @@ function openTheMenu(){
     
     burguerUl.addEventListener('click', openTheMenu);
  
-//INICIAR SESION Y REGISTRARSE-------------------------
+//INICIAR SESION-------------------------
 //-----------------------------------------------------
 
-//variables registro
-let registerButton = document.getElementById ('register')
-let registerWindow = document.getElementById ('registerWindow')
-let acceptRegisterButton= document.getElementById ('botonAceptaRegistro')
-let cancelRegisterButton= document.getElementById ('botonCancelarRegistro')
-let usernameInput= document.getElementById ('userName').value
-let passwordInput= document.getElementById ('password').value
-
-//variables login
+//variables LOG IN
 let iniciarSesionButton= document.getElementById ('logInText')
 let loginWindow = document.getElementById ('loginWindow')
 let botonAceptaSesion = document.getElementById ('botonAceptaSesion')
@@ -52,26 +44,11 @@ let usuarioX = document.getElementById('usuarioX')
 let liUsuarioX = document.getElementById ('liUsuarioX')
 let loginForm = document.getElementById('loginForm')
 
-//REGISTER--------------------------------------------------
-function userRegister (){
-
-    registerWindow.classList.toggle('open')
-    loginWindow.classList.remove('open')
-    }
-    
-    registerButton.addEventListener ('click',userRegister)
-    cancelRegisterButton.addEventListener ('click', userRegister)
     
     
-// FUNCION RECIBIR DATOS Y ALMACENARLOS----------------------------------------------------------------------------------------------------------------------------------------------------
+// LOG IN----------------------------------------------------------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-  
-
-// if (!usuarioX= "") {
-
-// }
 
 
 const saveUserToJson = (userObject) => {
@@ -79,23 +56,31 @@ const saveUserToJson = (userObject) => {
     usersArray.push(userObject);
     localStorage.setItem('users', JSON.stringify(usersArray));
 };
+   
+function userLogin (){
+
+    loginWindow.classList.toggle('open')
+    registerWindow.classList.remove('open')
+}
+    iniciarSesionButton.addEventListener ('click', userLogin)
+    botonCancelarSesion.addEventListener ('click', userLogin)
 
 
+//Obtener info del login
 
-    
-let registerForm = document.getElementById('registerForm')
-    
-registerForm.addEventListener('submit', (e) => {
+
+loginForm.addEventListener('submit', (e) => {
     e.preventDefault()
     
-    let registerInput = e.target.children
-    let username = registerInput[1].value
-    let password = registerInput[3].value
-    consolearUsuario(username, password);
-    })
-    
+    let loginInput = e.target.children
+    let sesionUsername = loginInput[1].value
+    let sesionPassword = loginInput[3].value
+    consolearUsuario(sesionUsername, sesionPassword);
+ })
 
-const consolearUsuario = (clave, valor) => {
+
+ //Función console---------------------------------------------------
+ const consolearUsuario = (clave, valor) => {
     localStorage.setItem('username', clave);
     localStorage.setItem('password', valor); 
     let savedUsername = localStorage.getItem('username');
@@ -103,7 +88,6 @@ const consolearUsuario = (clave, valor) => {
     
     let savedPassword = localStorage.getItem('password');
     loginWindow.classList.remove('open')
-    registerWindow.classList.remove('open')
 
 //ESTE codigo hace que la recarga sea instantanea cuando inicias sesion con otro nombre
         if (savedUsername && savedPassword) {
@@ -127,57 +111,12 @@ const consolearUsuario = (clave, valor) => {
        
     };
 
-
-
     let user = localStorage.getItem("username");
     if (user) {
         liUsuarioX.style.display = "flex";
         usuarioX.textContent = "¡Bienvenido," + " " + user + "!";
     }
-    
-//LOG IN-----------------------------------------
-function userLogin (){
-
-    loginWindow.classList.toggle('open')
-    registerWindow.classList.remove('open')
-}
-    iniciarSesionButton.addEventListener ('click', userLogin)
-    botonCancelarSesion.addEventListener ('click', userLogin)
-
-
-
-//Obtener info del login
-
-
-loginForm.addEventListener('submit', (e) => {
-    e.preventDefault()
-    
-    let loginInput = e.target.children
-    let sesionUsername = loginInput[1].value
-    let sesionPassword = loginInput[3].value
-    consolearUsuario(sesionUsername, sesionPassword);//Activa la función consolearUsuario declarada en la sección register
- })
-
-  
-
  
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
 
 
 //localStorage.removeItem ('nombre')

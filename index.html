@@ -34,9 +34,9 @@
                                 <p id="logInText">Iniciar Sesión</p>
                             </li>
                         
-                            <li>
-                                <p id="register">Registrarse</p>
-                            </li>
+                            <!-- <li>
+                                <p id="register">Iniciar sesión</p>
+                            </li> -->
 
                             <li id="liUsuarioX">
                                 <p id="usuarioX"></p>
@@ -48,33 +48,7 @@
     </header>
 
 
-<!-- <div id="LoginWindow">
 
-
-    
-</div> -->
-
-    <div id="registerWindow">
-
-        <p class="subtitulo">Registro de Usuario</p>
-
-        <form action="/server/" method="POST" id="registerForm">
-        
-            <label for="userName">Usuario</label>
-            <input type="text" id="userName" name="user" placeholder="Por Ejemplo: Brutus">
-
-            <label for="password">Contraseña</label>
-            <input type="text" id="password" name="pass" placeholder="Por Ejemplo: mago1234">
-            <input type="submit" value="Aceptar" id="botonAceptaRegistro">
-        </form>
-
-        <div class="divBotonCancelar">
-            <button id="botonCancelarRegistro">Cancelar</button>
-        </div>
-        
-
-
-    </div>
     <div id="loginWindow">
 
         <p class="subtitulo">Iniciar Sesión</p>
@@ -86,18 +60,16 @@
 
             <label for="password">Contraseña</label>
             <input type="text" id="loginPassword" name="pass">
-            <input type="submit" value="Aceptar" id="botonAceptaSesion">
+            <input type="submit" value="Aceptar" id="botonAceptaSesion" class="button">
         </form>
 
         <div class="divBotonCancelar">
-            <button id="botonCancelarSesion">Cancelar</button>
+            <button id="botonCancelarSesion" class="button">Cancelar</button>
         </div>
         
 
 
     </div>
-
-
 
 
 
@@ -113,8 +85,11 @@
     <div>
         <p class="cuerpoDelTexto">Bienvenidos a la taberna! Estamos a punto de empezar la partida! <br>Tomen un asiento y un jarro de bebida! <br>Aquí podrán crear, darle vida y guardar sus personajes. </p>
     </div>
+<div id="contenedorBotones">
+    <button id="buttonCreaPersonaje" class="button">Crea tu personaje</button>
+    <button id="buttonCargatuPersonaje" class="button">Ver tu personaje</button>
+</div>
 
-<button id="buttonCreaPersonaje">Crea tu personaje</button>
 
 </div>
 <!-- ----------------------------------------------------------------------------------------------------------------------->
@@ -134,7 +109,7 @@
             <label for="sexo" id="sexoLabel">Sexo</label>
             <input type="text" id="sexo" name="sexo" placeholder="Varón">
 
-            <input type="submit" value="Aceptar" id="botonSubmitCharacter">
+            <input type="submit" value="Aceptar" id="botonSubmitCharacter" class="button">
 
             <div class="divPortrait" >
                 <div class="img-container">
@@ -219,7 +194,7 @@
 
         <div id="divDado">
 
-            <button id="lanzarDados">Tirar dados</button>
+            <button id="lanzarDados" class="button">Tirar dados</button>
             <img id="dadoImagen" src="images\dado epico2.svg" alt="">
 
             <div id="contenedorResultadoDado">
@@ -242,34 +217,34 @@
         <div class="divAtributos">
 
             <p class="atributo">Fuerza</p> 
-            <button class="buttonPlus" id="minusButton">+</button>
-            <button class="buttonMinus" id="plusButton">-</button>
+            <button type="button" class="buttonPlus" id="minusButton">+</button>
+            <button type="button" class="buttonMinus" id="plusButton">-</button>
             <p class="valorAtributo span1" id="fuerza">0</p>
             
 
             <p class="atributo">Destreza</p> 
-            <button class="buttonPlus">+</button>
-            <button class="buttonMinus">-</button>
+            <button type="button"class="buttonPlus">+</button>
+            <button type="button" class="buttonMinus">-</button>
             <p class="valorAtributo span1" id="destreza">0</p>
 
             <p class="atributo">Constitución</p> 
-            <button class="buttonPlus">+</button>
-            <button class="buttonMinus">-</button>
+            <button type="button" class="buttonPlus">+</button>
+            <button type="button" class="buttonMinus">-</button>
             <p class="valorAtributo span1" id="constitucion">0</p>
 
             <p class="atributo">Inteligencia</p> 
-            <button class="buttonPlus">+</button>
-            <button class="buttonMinus">-</button>
+            <button type="button" class="buttonPlus">+</button>
+            <button type="button" class="buttonMinus">-</button>
             <p class="valorAtributo span1" id="inteligencia">0</p>
 
             <p class="atributo">Sabiduría</p> 
-            <button class="buttonPlus">+</button>
-            <button class="buttonMinus">-</button>
+            <button type="button" class="buttonPlus">+</button>
+            <button type="button" class="buttonMinus">-</button>
             <p class="valorAtributo span1" id="sabiduria">0</p>
 
             <p class="atributo">Carisma</p> 
-            <button class="buttonPlus">+</button>
-            <button class="buttonMinus">-</button>
+            <button type="button" class="buttonPlus">+</button>
+            <button type="button" class="buttonMinus">-</button>
             <p class="valorAtributo span1" id="carisma">0</p>
 
 
@@ -313,7 +288,12 @@
 
 
 
+<footer id="footer">
 
+<button id="seeMoreCharacters" class="button">
+    Personajes creados por usuarios
+</button>    
+</footer>
 
 
 

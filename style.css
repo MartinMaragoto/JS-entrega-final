@@ -148,14 +148,9 @@ li {
 
 /*----------------------------------------REGISTER-LOGIN WINDOW POP UP ---------------------------------------------------------------------------------------------------------- */
 
-/* #modalPopUps {
 
-    display: flex;
-    justify-content: center;
 
-} */
-
-#registerWindow, #loginWindow {
+#loginWindow {
 
     display: none;
     position: absolute;
@@ -163,7 +158,7 @@ li {
     left: 20vw;
 }
 
-#registerWindow.open, #loginWindow.open {
+#loginWindow.open {
 
     background-color: #4c4468;
     width: 50%;
@@ -173,7 +168,7 @@ li {
 
 }
 
-#registerForm, #loginForm {
+#loginForm {
 
     border-radius: 0.3m;
     padding: 2vw;
@@ -186,17 +181,18 @@ li {
     text-align: center;
 }
 
-#userName, #loginUsername {
+#loginUserName {
 
     font-family: "Matisse M" ;
+    
 
 }
 
 
-#password, #loginPassword {
+#loginPassword {
 
     font-family: "Matisse M" ;
-
+    
 }
 
 .divBotonCancelar {
@@ -229,6 +225,13 @@ li {
     flex-direction: column;
 }
 
+#contenedorBotones {
+
+    display: flex;
+    justify-content: space-around;
+    margin: 1vw 20vw 0 20vw;
+}
+
 .subtitulo {
     font-family: "Matisse UB" ;
     color:#5adaff;
@@ -238,7 +241,7 @@ li {
     margin: 2vw 2vw 3vw 2vw;
 }
 
-#buttonCreaPersonaje, #botonAceptaRegistro, #botonCancelarRegistro, #botonAceptaSesion, #botonCancelarSesion, #botonSubmitCharacter, #lanzarDados {
+.button{
 
 width: 18vw;
 height: 6vw;
@@ -269,12 +272,12 @@ max-width: 100%;
 }
 
 
-#buttonCreaPersonaje {
+#buttonCreaPersonaje, #buttonCargatuPersonaje {
 
     margin-bottom: 2vw;
 }
 
-#buttonCreaPersonaje:active {
+.button:active {
     box-shadow: #222c7e 0 3px 7px inset;
     transform: translateY(2px);
     
@@ -771,18 +774,49 @@ max-width: 100%;
     
 }
 
-#dataJson1 {
 
-    color: #ffffff;
+
+
+
+#footer {
+    display: none;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: #2b2738;
+    width: 100%;
+    padding-top: 2vw;
 }
 
+#seeMoreCharacters {
 
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
 
+.liJson {
+    font-family: "Matisse M";
+    font-size: 1.5vw;
+    color: #d0ccc3;
+    /* background-color: #4c4468; */
+    margin: 1vw;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: auto;
+}
 
-/* footer {
-    position: absolute;
-    bottom: -200px;
-    background-color: black;
-    height: 300px;
-    width: 105vw;
-} */
+ .nameJson {
+
+    margin: 2vw;
+    font-size: 3vw;
+} 
+.infoJson {
+
+    margin: 0;
+}
+.imgJson {
+
+    width: 70%;
+    max-height: 50%;
+}
