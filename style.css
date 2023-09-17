@@ -112,6 +112,7 @@ body {
 
     margin: 0vw 4vw;
 
+
 }
 
 
@@ -133,6 +134,9 @@ li {
 
     font-family: "Matisse UB" ;
     text-align: center;
+    font-size: 1.7vw;
+    cursor: auto;
+    margin-top: 0.8vw;
 }
 
 .burguer {
@@ -285,11 +289,12 @@ max-width: 100%;
 
 
 
-.LogInText {
+#logInText {
 
     font-family: "Matisse UB";
-    width: 10vw;
+    width: 12vw;
     margin-top: 1vw;
+    font-size: 1.5vw;
 }
 
 
@@ -297,7 +302,7 @@ max-width: 100%;
 
     font-family: "Matisse M" ;
     color: #ffffff;
-    font-size: 1vw;
+    font-size: 1.3vw;
     text-align: center;
 }
 

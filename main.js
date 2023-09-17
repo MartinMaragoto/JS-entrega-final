@@ -242,7 +242,7 @@ buttonCargatuPersonaje.addEventListener ('click', () => {
     if (!nameChar || !raza || !clase || !sexo || !newImageChar){
         Swal.fire({
             icon: 'error',
-            title: 'Oh no!',
+            title: '¡Oh no!',
             text: '¡Debes crear un personaje primero!',
           })
     } else {
