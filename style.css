@@ -517,7 +517,7 @@ max-width: 100%;
     grid-row-start: 5;
     grid-row-end: 14;
     display: grid;
-    grid-template-columns: auto 4vw 4vw;
+    grid-template-columns: auto 7vw 7vw;
     grid-template-rows: repeat(12, 5vw);
 
 
@@ -535,8 +535,8 @@ max-width: 100%;
 .atributo {
     font-family: "Matisse EB" ;
     color: #ffffff;
-    font-size: 2vw;
-    margin: 1.8vw 0 0 0;
+    font-size: 1.7vw;
+    margin: 1.8vw 0 0 1vw;
     text-align: center;
     z-index: 1;
 }
@@ -551,6 +551,11 @@ max-width: 100%;
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
     border-radius: 9px;
     border-color: #d0ccc3;
+}
+
+.buttonPlus {
+
+    margin-left:5vw;
 }
 
 .valorAtributo {
