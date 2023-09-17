@@ -247,7 +247,7 @@ buttonCargatuPersonaje.addEventListener ('click', () => {
           })
     } else {
         gridContainer.style.display= "grid"
-        footer.style.display= "grid"
+        
     }
   
 })
@@ -296,7 +296,12 @@ nextButton.addEventListener("click", () => {
 
 
 
+let seeMoreButton = document.getElementById ('seeMoreCharacters')
 
+seeMoreButton.addEventListener ('click',() => {
+style.display = 'grid'
+  
+})
 
 
 fetch("./data.json")
@@ -316,8 +321,9 @@ fetch("./data.json")
     `
     footer.append (li)
     li.classList.add ('liJson')
-})
-})
+    })
+  })
+
 // .catch ((error) =>{
 
 //     const div = document.createElement ('div')

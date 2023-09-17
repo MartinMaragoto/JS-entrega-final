@@ -1,6 +1,10 @@
 @media screen and (min-width: 380px) and (max-width: 599px){
 
-   
+    #itemIniciarSesion {
+
+        margin: 7vw 0 7vw 0;
+    }
+    
     .divFondo {
 
         margin-top: 12vw ;
@@ -180,13 +184,21 @@
        
     }
 
+    #footer {
+
+        height: 90vw;
+        grid-template-rows: 15vw 50vw auto;
+    }
+
     #seeMoreCharacters {
 
         margin-bottom: 4vw;
+        margin-top: 8vw;
     }
     .liJson {
     
         font-size: 2.0vw;
+        margin-top: 10vw;
     }
     .nameJson {
 

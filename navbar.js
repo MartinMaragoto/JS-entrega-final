@@ -13,14 +13,16 @@
 
 
   if (windowWidth >=945) {
-    burguerUl.style.display = 'none';
-    burguerLi.forEach(li => li.style.display = 'none');
+     burguerUl.style.display = 'none';
+     burguerLi.forEach(li => li.style.display = 'none');
      expandedNavbarUl.style.display = 'flex';
-    
+     
  } else {
      burguerUl.style.display = 'block'
      burguerLi.forEach(li => li.style.display = 'block')
      expandedNavbarUl.style.display = 'none'
+     footer.style.display = 'grid'
+
  }
 
 function openTheMenu(){
