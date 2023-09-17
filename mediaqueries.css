@@ -29,9 +29,9 @@
 
     #dadoImagen {
    
-        width: 20%;
-        bottom: 2vw;
-        right: 21.5vw;
+        width: 29%;
+        bottom: 0.2vw;
+        right: 20vw;
        
     }
     
@@ -157,7 +157,7 @@
 
     #resultadoDado {
 
-        font-size: 5vw;
+        font-size: 8vw;
        
     }
 
@@ -255,19 +255,19 @@
     }
     .buttonMinus {
 
-        margin-left: -15vw;
+        margin-left: -5vw;
     }
-    /* .buttonPlus {
+    .buttonPlus {
     
         
-        margin: 2vw 0 0 4vw;
+        margin-left: -9vw;
        
       
-    } */
+    }
     #contenedorResultadoDado {
 
-        top: 4vw;
-        left: 37.5vw;
+        top: 1vw;
+        left: 36vw;
             
     }
 /* -----------------Recuadros de madera------------- */
