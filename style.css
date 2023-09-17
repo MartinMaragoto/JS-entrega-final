@@ -239,7 +239,6 @@ li {
 .subtitulo {
     font-family: "Matisse UB" ;
     color:#5adaff;
-    /* text-shadow: 2px 2px #000000; */
     font-size: 2vw;
     text-align: center;
     margin: 2vw 2vw 3vw 2vw;
@@ -393,8 +392,6 @@ max-width: 100%;
 .slide-arrow {
     position: absolute;
     display: flex;
-    /* top: 0;
-    bottom: 0; */
     height: 5.9vw;
     background-color: white;
     border: none;
@@ -486,16 +483,11 @@ max-width: 100%;
     grid-column-start: 3;
     grid-row-start: 5;
 }
-/* #submitName {
-
-    background-color: yellow;
-} */
-
 
   
  
   
-  .form-row input[type=text] {
+  /* .form-row input[type=text] {
     background-color: #d0ccc3;
     border-radius: 0.4em;
     border-style: none;
@@ -506,7 +498,7 @@ max-width: 100%;
   
   .form-row label {
     margin: 1.5em 0;
-  }
+  } */
 
   /* --------------------------------------------------FIN DEL FORMULARIO--------------------------------------------- */
 /* Atributos */

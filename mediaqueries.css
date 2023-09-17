@@ -1,7 +1,150 @@
 @media screen and (min-width: 380px) and (max-width: 599px){
 
+   
+   /* TAMAÑOS DE TEXTOS */
+
+
+   #opened-menu.open {
+   
+    font-size: 55px;
     
+}
+.itemsMenuAbierto {
+
+    font-size: 3vw;
+
+}
+
+#usuarioX {
+
+    font-size: 2.7vw;
     
+}
+
+.subtitulo {
+
+    font-size: 3vw;
+    
+}
+
+.button {
+
+    font-size: 2.3vw;
+}
+
+#logInText {
+
+
+    font-size: 2.5vw;
+}
+
+.cuerpoDelTexto {
+
+    font-size: 2.3vw;
+    
+}
+
+.slide-arrow {
+
+    font-size: 3.5vw;
+   
+  }
+
+
+
+
+
+   
+   
+    #razaLabel, #sexoLabel {
+
+        margin-left: -9vw;
+    
+    }
+    
+    #nombreLabel, #claseLabel {
+
+
+        margin-left: 0;
+    }
+
+    #nombre, #raza, #clase, #sexo {
+
+        width: 20vw;
+    }
+
+    .fotoPerfilCharacter {
+
+        margin-left: -5vw;
+    }
+
+
+    
+    #thumbnail-container {
+
+       margin-left: -9.2vw;
+        
+    }
+
+    #misHechizos {
+    
+        font-size: 1.5vw;
+    
+    }
+    .divVidaMana {
+
+        font-size: 2.5vw;
+      
+    }
+    .pVidaMana {
+
+        font-size: 2.7vw;
+    
+    }
+
+    #vida, #mana, #oro, #nivel, #armadura  {
+      
+        font-size: 2.7vw;
+    
+    }
+
+    #resultadoDado {
+
+        font-size: 5vw;
+       
+    }
+
+    .divDatosDelPersonaje {
+
+
+        font-size: 2.5vw;
+    
+    }
+
+    #nombrePersonaje {
+
+        font-size: 4vw;
+       
+    }
+
+    #clasePersonaje, #razaPersonaje, #sexoPersonaje{
+
+        font-size: 2.7vw;
+       
+    }
+
+    .liJson {
+    
+        font-size: 2.5vw;
+    }
+    .nameJson {
+
+        font-size: 4vw;
+    } 
+
+
+
+/*-------------------------- GRID Container ------------------ */
     #grid-container {
 
         grid-template-columns: 25vw 15vw 15vw 15vw 15vw;
@@ -12,8 +155,8 @@
     }
     
     .divAtributos {
-        grid-column-start: 3;
-        grid-column-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 5;
         grid-row-start: 5;
         grid-row-end: 14;
        
@@ -26,7 +169,7 @@
         grid-row-end: 20;
         width: 40vw;
         margin-left: 8vw;
-      
+        font-size: 2.5vw;
     }
 
     .divHechizos {
@@ -36,25 +179,31 @@
         grid-row-end: 20;
         width: 40vw;
         margin-left: 8vw;
+        font-size: 2.5vw;
        
     }
+
+   
 
     .atributo {
     
         margin: 2.5vw 0 0 -1vw;
+        font-size: 2.7vw;
         
     } 
 
     .valorAtributo {
 
         margin-left: 3.4vw;
+        font-size: 3.5vw;
       
     }
  
     .buttonPlus, .buttonMinus {
 
-        height: 4.7vw;
-        width: 4.7vw;
+        height: 7vw;
+        width: 7vw;
+        font-size: 2.3vw;
 
     }
     .buttonPlus {
