@@ -777,6 +777,8 @@ max-width: 100%;
 
 
 #footer {
+    right: 1vw;
+    position: absolute;
     display: none;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
