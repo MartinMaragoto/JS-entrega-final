@@ -7,7 +7,8 @@
  const expandedNavbarUl = document.getElementById ('expandedNavbar') // ul del nabvar expandido
  const expandedNavbarLi = document.querySelectorAll ('#iconNavbar li') //iniciar sesion
  const openedMenu = document.getElementById ('opened-menu')
-
+ const iniciarSesionMenuHamburguesa = document.getElementById ('itemIniciarSesion')
+ 
  const windowWidth = window.innerWidth
 
 
@@ -31,6 +32,8 @@ function openTheMenu(){
     }
     
     burguerUl.addEventListener('click', openTheMenu);
+
+
  
 //INICIAR SESION-------------------------
 //-----------------------------------------------------
@@ -62,11 +65,11 @@ const saveUserToJson = (userObject) => {
 function userLogin (){
 
     loginWindow.classList.toggle('open')
-    registerWindow.classList.remove('open')
+    
 }
     iniciarSesionButton.addEventListener ('click', userLogin)
     botonCancelarSesion.addEventListener ('click', userLogin)
-
+    iniciarSesionMenuHamburguesa.addEventListener ('click', userLogin)
 
 //Obtener info del login
 

@@ -71,6 +71,7 @@ body {
     cursor: pointer;
 }
 
+
 #opened-menu {
     display: none;
   }
@@ -94,6 +95,7 @@ body {
 #itemIniciarSesion {
 
     margin-top: 9vw;
+    cursor: pointer;
 }
 
 #expandedNavbar {
@@ -125,11 +127,7 @@ li {
     font-family: "Matisse M";
 }
 
-#liUsuarioX {
 
-    display: none;
-
-}
 #usuarioX {
 
     font-family: "Matisse UB" ;

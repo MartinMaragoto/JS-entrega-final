@@ -4,16 +4,26 @@
 
         margin: 7vw 0 7vw 0;
     }
+    #burguerNavbar {
+
+        float: left;
+        
+    }
+    #main-header {
+    
+        height: 7vw;
+
+    }
 
     .logo {
       
-        margin: 40vw auto 1vw auto;
+        margin: 50vw auto 1vw auto;
        
     }
     
     .divFondo {
 
-        margin-top: 8vw ;
+        margin-top: 12vw ;
         
     }
  
@@ -65,7 +75,7 @@
 
 #usuarioX {
 
-    font-size: 2.7vw;
+    font-size: 1.7vw;
     
 }
 
