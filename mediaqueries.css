@@ -113,12 +113,12 @@
 
   }
   #slide-arrow-prev {
-    left: 28vw;
+    left: 20vw;
     
   }
 
   #slide-arrow-next {
-    right: 13vw;
+    right: 19vw;
    
   }
 
@@ -147,7 +147,7 @@
 
     .divPortrait .img-container .fotoPerfilCharacter{
 
-        margin-left: -8.5vw;
+        margin-left: -14.5vw;
         height: 150%;
         width: 150%;
     }
@@ -163,7 +163,7 @@
       }
     .divPortrait #thumbnail-container {
 
-       margin-left: -3vw;
+       margin-left: -15.5vw;
        margin-top: 15vw;
        height: 20vw;
        width: 40vw; 
@@ -176,7 +176,7 @@
 
     #botonSubmitCharacter {
 
-        margin: 3vw;
+        margin-left: -7.5vw;
     }
 
     #misHechizos {
@@ -246,7 +246,8 @@
     #seeMoreCharacters {
 
         margin-bottom: 4vw;
-        margin-top: 8vw;
+        margin-top: 5vw;
+        width: 20vw;
     }
     .liJson {
     
