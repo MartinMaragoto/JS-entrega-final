@@ -122,11 +122,3 @@ loginForm.addEventListener('submit', (e) => {
         usuarioX.textContent = "¡Bienvenido," + " " + user + "!";
     }
  
-
-
-//localStorage.removeItem ('nombre')
-//localStorage.clear()
-
-
-
-//---------------------------FIN DEL NAVBAR-------------------------------------------

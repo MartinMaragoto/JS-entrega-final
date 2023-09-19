@@ -23,36 +23,3 @@ lanzarDadosButton.addEventListener('click', function() {
     resultadoDado.textContent = resultado
 })
 
-
-//     switch(resultadoDado) {
-
-// case 1:
-   
-//     one.style.display= "block"
-
-// break;
-
-// case 2:
-    
-//     two.style.display= "block"
-// break;
-
-// case 3:
-//     three.style.display= "block"
-// break;
-
-// case 4:
-//     four.style.display= "block"
-// break;
-
-// case 5:
-//     five.style.display= "block"
-// break;
-
-// case 6:
-//     six.style.display= "block"
-// break;
-
-//     }
-//     inputText.value = resultado; 
-// });

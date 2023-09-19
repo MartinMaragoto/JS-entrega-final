@@ -145,7 +145,7 @@ const stats = [
             
 
 
-//localStorage.clear()
+
 
 
 

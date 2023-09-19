@@ -324,14 +324,14 @@ fetch("./data.json")
     })
   })
 
-// .catch ((error) =>{
+.catch ((error) =>{
 
-//     const div = document.createElement ('div')
-//     div.innerHTML = `
-//     <h3> 'Lo sentimos mucho, un goblin se comió nuestros archivos' </h3>
+     const div = document.createElement ('div')
+     div.innerHTML = `
+     <h3> Lo sentimos mucho, un goblin se comió nuestros archivos </h3>
 
-//     `
-// }  )
+     `
+ }  )
 
 
 

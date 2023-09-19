@@ -483,23 +483,10 @@ max-width: 100%;
 }
 
   
- 
-  
-  /* .form-row input[type=text] {
-    background-color: #d0ccc3;
-    border-radius: 0.4em;
-    border-style: none;
-    padding: 0.7em;
-    font-size: 0.9em;
-    font-family: "Matisse M";
-  }
-  
-  .form-row label {
-    margin: 1.5em 0;
-  } */
 
   /* --------------------------------------------------FIN DEL FORMULARIO--------------------------------------------- */
-/* Atributos */
+
+  /* Atributos */
 
 .divAtributos {
     grid-column-start: 2;
@@ -692,8 +679,6 @@ max-width: 100%;
     font-family: "Breathe Fire IV";
     font-size: 4vw;
     color: #b8f0ff;
-    /* right: 30.1vw;
-    top: 5.2vw; */
     text-shadow: -1px 1px 25px rgb(255, 255, 255);
     filter: drop-shadow(2px 2px 4px#0033ff);
     z-index: 2;
@@ -797,7 +782,6 @@ max-width: 100%;
     font-family: "Matisse M";
     font-size: 1.5vw;
     color: #d0ccc3;
-    /* background-color: #4c4468; */
     margin: 1vw;
     grid-row-start: 2;
     display: flex;
